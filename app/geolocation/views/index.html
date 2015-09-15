@@ -1,0 +1,19 @@
+<div ng-controller="IndexController">
+
+  <super-navbar>
+    <super-navbar-title>
+      Index
+    </super-navbar-title>
+  </super-navbar>
+
+  <div class="padding">
+  <button class="button button-block button-positive" ng-click="getPosition()">Get position</button>
+
+  <ul class="list" ng-show="position">
+  <li class="item">Latitude: {{position.coords.latitude}}</li>
+  <li class="item">Longitude: {{position.coords.longitude}}</li>
+  <li class="item">Time: {{position.timestamp}}</li>
+</ul>
+  </div>
+
+</div>
