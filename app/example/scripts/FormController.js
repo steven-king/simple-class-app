@@ -63,7 +63,10 @@ angular
             // Show the error message somewhere and let the user try again.
             supersonic.logger.error("Error: " + error.code + " " + error.message);
           }
-});
+        });
+
+
+
 
     }
 
