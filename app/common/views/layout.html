@@ -15,8 +15,15 @@
   <script src="/components/angular/angular.js"></script>
   <script src="/components/supersonic/supersonic.js"></script>
   <script src="/components/webcomponentsjs/webcomponents.js"></script>
+
+  <!-- Bower Way -->
   <script src="/components/jquery/dist/jquery.min.js"></script>
   <script src="/components/parse/parse.min.js"></script>
+
+
+  <script>
+    Parse.initialize("W9uXFiwaQ0ZNx4oG0JWC7rbWZHtA3w9bi1LxfqQd", "HZgOleLtk18UAtDCFyA4lMIZBtA0tQus2qXyzSC4");
+  </script>
 
   <% _.each(yield.modules, function(module) { %>
   <script src="/app/<%= module %>.js"></script>
